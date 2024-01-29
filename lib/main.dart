@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:myfirstproject/mySessionClient.dart';
 
-const USER_NAME = "{user name}";
-const PASSWORD ="{password}";
+import 'accout.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -109,6 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
     var response2 = await session.post(
         response1_3_url,
         body: {
+          ///change this
           "j_username": USER_NAME,
           "j_password": PASSWORD,
           "_eventId_proceed":""
