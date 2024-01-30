@@ -7,7 +7,6 @@ import 'package:myfirstproject/cookies.dart';
 
 abstract mixin class MySessionClient implements Client{
   final cookie = MyCookies();
-  final _cookieRoot = Uri.parse("cookie/root");
 
 
   @override
